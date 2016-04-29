@@ -9,7 +9,9 @@ cd /root/Controller
 chmod 755 controller_configure_network.sh
 
 Create .nic_interfaces and change private and public interface name accordingly
+
 vi ~/.nic_interfaces
+
 e.g.
 private_interface = em1
 public_interface = p1p1
