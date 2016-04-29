@@ -2,6 +2,7 @@
 All the documentation is based on http://docs.openstack.org/liberty/install-guide-ubuntu/.
 
 In the Controller node:
+
 sudo su
 Put the Controller folder in /root/
 cd /root/Controller
@@ -13,6 +14,7 @@ Create .nic_interfaces and change private and public interface name accordingly
 vi ~/.nic_interfaces
 
 e.g.
+
 private_interface = em1
 
 public_interface = p1p1
@@ -37,6 +39,7 @@ Execute to setup network on controller node
 
 
 In the Compute node(s):
+
 sudo su
 Put the Compute folder in /root/
 cd /root/Compute
@@ -44,10 +47,15 @@ cd /root/Compute
 chmod 755 compute_configure_network.sh
 
 Create .nic_interfaces and change private and public interface name accordingly
+
 vi ~/.nic_interfaces
+
 e.g.
+
 private_interface = em1
+
 public_interface = p1p1
+
 
 In the Compute folder execute configure_network.sh
 ./compute_configure_network.sh
