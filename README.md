@@ -14,6 +14,7 @@ vi ~/.nic_interfaces
 
 e.g.
 private_interface = em1
+
 public_interface = p1p1
 
 In the Controller folder execute configure_network.sh
