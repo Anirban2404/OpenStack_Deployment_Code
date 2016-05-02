@@ -79,32 +79,38 @@ Network Time Protocol (NTP) -- chrony
 ========================================================
 
 Setup Network Time Protocol (NTP) -- chrony in new compute node
+```
 chmod 755 compute_chrony.sh
 ./compute_chrony.sh
-
+```
+Verify chrony service in Compute node.
+```
 chmod 755 verify_chrony.sh
 ./verify_chrony.sh
-
+```
 ========================================================
 Setup openstack environment
 ========================================================
 
 Enable the OpenStack repository and install openstack packages in Compute node
+```
 ./openstack_packages.sh
-
+```
 ========================================================
 Add the Compute service -- Nova
 ========================================================
 Configure nova-compute in compute node
+```
 ./compute_nova_setup.sh
-
+```
 ========================================================
 Add the Networking service -- Neutron
 ========================================================
 Install and Configure OpenStack Networking – neutron in compute node
+```
 ./compute_neutron_setup.sh 
-it includes compute_neutron_selfservice_setup.sh
-
+```
+It includes compute_neutron_selfservice_setup.sh
 
 ========================================================
 Add the Configuration of live migrations
