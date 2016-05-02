@@ -30,7 +30,6 @@ Put the Controller folder in /root/
 ```
 root@ubuntu:~/OpenStack_Deployment_Code# cp -r Controller/ /root/
 cd /root/Controller
-
 chmod 755 controller_configure_network.sh
 ```
 Create .nic_interfaces and change private and public interface name accordingly
@@ -67,11 +66,30 @@ Execute to setup network on controller node
 
 
 In the Compute node(s):
+----------------
+```
+root@ubuntu:~# git clone https://github.com/Anirban2404/OpenStack_Deployment_Code
+
+Cloning into 'OpenStack_Deployment_Code'...
+remote: Counting objects: 81, done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 81 (delta 46), reused 68 (delta 39), pack-reused 0
+Unpacking objects: 100% (81/81), done.
+Checking connectivity... done.
+root@ubuntu:~# ls -lrt
+total 4
+drwxr-xr-x 5 root root 4096 May  2 10:59 OpenStack_Deployment_Code
+root@ubuntu:~# cd OpenStack_Deployment_Code/
+root@ubuntu:~/OpenStack_Deployment_Code# ls
+Compute  Controller  openstack_installation_documentaion.txt  README.md
+```
+-------------------
 ```
 sudo su
 ```
 Put the Compute folder in /root/
 ```
+root@ubuntu:~/OpenStack_Deployment_Code#  cp -r Compute/ /root/
 cd /root/Compute
 chmod 755 compute_configure_network.sh
 ```
