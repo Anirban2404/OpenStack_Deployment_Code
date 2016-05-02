@@ -1031,7 +1031,7 @@ chmod 777 /var/lib/nova/instances
 chsh -s /bin/sh nova
 
 # copy the .ssh file
-cp -r ~/.ssh /var/lib/nova/.ssh/
+cp -r /root/.ssh /var/lib/nova/.ssh
 
 # Edit /etc/ssh/ssh_config file
 cat >>  /etc/ssh/ssh_config  <<EOF
