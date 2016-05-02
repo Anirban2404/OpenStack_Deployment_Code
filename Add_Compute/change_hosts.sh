@@ -20,6 +20,10 @@ if [ $uid -ne 0 ]; then
    exit 1
 fi
 
+# Name of new compute node
+new_compute_node_name=$(cat /etc/hostname)
+
+# Change all /etc/hosts
 i=0
 while read -r line
  do
