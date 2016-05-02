@@ -4,7 +4,7 @@ All the documentation is based on http://docs.openstack.org/liberty/install-guid
 In the Controller node:
 
 ----------------
-
+```
 root@ubuntu:~# git clone https://github.com/Anirban2404/OpenStack_Deployment_Code
 
 Cloning into 'OpenStack_Deployment_Code'...
@@ -19,6 +19,7 @@ drwxr-xr-x 5 root root 4096 May  2 10:59 OpenStack_Deployment_Code
 root@ubuntu:~# cd OpenStack_Deployment_Code/
 root@ubuntu:~/OpenStack_Deployment_Code# ls
 Compute  Controller  openstack_installation_documentaion.txt  README.md
+```
 -------------------
 
 sudo su
