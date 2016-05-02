@@ -94,6 +94,7 @@ Setup openstack environment
 
 Enable the OpenStack repository and install openstack packages in Compute node
 ```
+chmod 755 openstack_packages.sh
 ./openstack_packages.sh
 ```
 ========================================================
@@ -101,6 +102,7 @@ Add the Compute service -- Nova
 ========================================================
 Configure nova-compute in compute node
 ```
+chmod 755 compute_nova_setup.sh
 ./compute_nova_setup.sh
 ```
 ========================================================
@@ -108,6 +110,7 @@ Add the Networking service -- Neutron
 ========================================================
 Install and Configure OpenStack Networking – neutron in compute node
 ```
+chmod 755 compute_neutron_setup.sh 
 ./compute_neutron_setup.sh 
 ```
 It includes compute_neutron_selfservice_setup.sh
@@ -117,9 +120,11 @@ Add the Configuration of live migrations
 ========================================================
 Install and Configure Live Migration in compute node
 ```
+chmod 755 compute_setup_livemigration.sh
 ./compute_setup_livemigration.sh
 ```
 verify Live Migration on compute
 ```
-./Compute/verify_live_migration.sh
+chmod 755 verify_live_migration.sh
+./verify_live_migration.sh
 ```
