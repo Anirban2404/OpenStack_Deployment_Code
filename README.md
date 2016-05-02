@@ -5,7 +5,7 @@ In the Controller node:
 
 ----------------
 
-root@ubuntu:~# git clone https://github.com/Anirban2404/OpenStack_Deployment_Code\n
+root@ubuntu:~# git clone https://github.com/Anirban2404/OpenStack_Deployment_Code/n
 Cloning into 'OpenStack_Deployment_Code'...
 remote: Counting objects: 81, done.
 remote: Compressing objects: 100% (40/40), done.
