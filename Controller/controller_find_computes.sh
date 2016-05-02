@@ -26,7 +26,7 @@ fi
 enable_ssh_compute(){
     ssh -n $compute 'mkdir -p ~/.ssh'
     scp ~/.ssh/authorized_keys  $compute:~/.ssh/authorized_keys
-    ssh -n $compute 'chmod 644 ~/.ssh/authorized_keys
+    ssh -n $compute 'chmod 644 ~/.ssh/authorized_keys'
     scp ~/.ssh/id_rsa $compute:~/.ssh/id_rsa
     ssh -n $compute 'chmod 400 ~/.ssh/id_rsa'
     scp ~/.ssh/id_rsa.pub $compute:~/.ssh/id_rsa.pub
