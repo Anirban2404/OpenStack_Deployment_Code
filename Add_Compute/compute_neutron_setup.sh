@@ -1112,7 +1112,7 @@ rabbit_password = $RABBIT_PASS
 EOF
 
 # Configure networking options: Self-service networks
-chmod 755 /root/Compute/compute_neutron_selfservice_setup.sh
+chmod 755 /root/Add_Compute/compute_neutron_selfservice_setup.sh
 ./compute_neutron_selfservice_setup.sh
 
 # Edit the /etc/nova/nova.conf 
