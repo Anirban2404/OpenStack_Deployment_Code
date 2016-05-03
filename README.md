@@ -1,4 +1,4 @@
-# OpenStack_Deployment_Code
+# OpenStack Deployment Code on Ubuntu
 All the documentation is based on http://docs.openstack.org/liberty/install-guide-ubuntu/.
 
 In the Controller node:
