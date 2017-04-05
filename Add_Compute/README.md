@@ -63,7 +63,7 @@ After the reboot of compute nodes, please check the connectivity. (e.g ping -c 4
 ========================================================
 Configure /etc/hosts
 ========================================================
-No Configure the /etc/hosts file of the Compute Node.
+Now Configure the /etc/hosts file of the Compute Node.
 ```
 chmod 755 compute_node_host_setup.sh
 ./compute_node_host_setup.sh
